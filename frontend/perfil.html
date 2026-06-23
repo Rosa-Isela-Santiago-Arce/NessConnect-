@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4f46e5">
+
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+        Mi Perfil - GameLink
+    </title>
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+<body>
+<div class="app">
+    <header class="topbar">
+        <h2>
+            👤 Mi Perfil
+        </h2>
+    </header>
+    <section class="perfil-card">
+        <div class="avatar-perfil">
+            <img
+                id="fotoPerfil"
+                src="img/default.png"
+                style="
+                    width:120px;
+                    height:120px;
+                    border-radius:50%;
+                    object-fit:cover;
+                "
+            >
+        </div>
+        <br>
+        <input
+            type="file"
+            id="archivoPerfil"
+        >
+        <br><br>
+        <button id="btnFotoPerfil">
+            Cambiar foto
+        </button>
+        <h2 id="nombrePerfil">
+            Cargando...
+        </h2>
+        <p id="correoPerfil">
+            Correo
+        </p>
+        <p id="telefonoPerfil">
+            Teléfono
+        </p>
+        <p id="carreraPerfil">
+            Carrera: No especificada
+        </p>
+        <p id="semestrePerfil">
+            Semestre: No especificado
+        </p>
+        <h4>
+            📚 Materias
+        </h4>
+        <div id="materiasPerfil">
+        </div>
+        <br>
+        <button
+            onclick="mostrarFormularioAcademico()"
+        >
+            ✏️ Editar información académica
+        </button>
+        <br><br>
+        <div
+            id="formularioAcademico"
+            style="display:none;"
+        >
+            <input
+                type="text"
+                id="inputCarrera"
+                placeholder="Carrera"
+            >
+            <br><br>
+            <input
+                type="number"
+                id="inputSemestre"
+                placeholder="Semestre"
+            >
+            <br><br>
+            <textarea
+                id="inputMaterias"
+                placeholder="Materias separadas por comas"
+            ></textarea>
+            <br><br>
+            <button
+                onclick="guardarInformacionAcademica()"
+            >
+                Guardar
+            </button>
+        </div>
+        <div class="monedas-box">
+            Pequeño en tamaño, enorme en cariño
+            <span id="monedasPerfil">
+                0
+            </span>
+        </div>
+    </section>
+    <section class="feed">
+        <h3>
+            👥 Amigos
+
+        </h3>
+        <input
+            type="text"
+            id="buscarUsuario"
+            placeholder="Buscar usuario..."
+        >
+        <button
+            id="btnBuscarUsuario"
+        >
+            Buscar
+
+        </button>
+        <div id="resultadoBusqueda">
+        </div>
+        <input
+            type="number"
+            id="idAmigo"
+            placeholder="ID del usuario"
+        >
+        <button
+            id="btnAgregarAmigo"
+        >
+            Agregar amigo
+        </button>
+        <div id="listaAmigos">
+        </div>
+    </section>
+    <section class="feed">
+        <h3>
+            📩 Solicitudes pendientes
+        </h3>
+        <div id="solicitudesPendientes">
+        </div>
+    </section>
+    <section class="feed">
+        <h3>
+            📝 Mis publicaciones
+        </h3>
+        <div id="misPublicaciones">
+        </div>
+    </section>
+    <!-- NESSIE SIEMPRE VISIBLE -->
+<div id="nessie">
+    <img 
+    id="nessieImagen"
+    src="img/nessie_salta.gif"
+    alt="Nessie">
+</div>
+   <nav class="menu-inferior">
+    <a href="inicio.html">
+        🏠
+    </a>
+    <a
+        href="mensajes.html"
+        class="icono-menu"
+    >
+        💬
+        <span
+            id="puntoMensajes"
+            class="punto-rojo"
+        ></span>
+    </a>
+    <a href="nova.html">
+        👾
+    </a>
+    <a
+        href="perfil.html"
+        class="icono-menu"
+    >
+        👤
+        <span
+            id="puntoSolicitudes"
+            class="punto-rojo"
+        ></span>
+    </a>
+</nav>
+</div>
+<script src="js/app.js"></script>
+<script src="js/nessie.js"></script>
+</body>
+</html>

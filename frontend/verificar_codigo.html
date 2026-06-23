@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4f46e5">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verificar código</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app recuperar-card"></div>
+    <h2>📩 Código de recuperación</h2>
+
+    <p>
+        Escribe el código que recibiste por correo.
+    </p>
+
+    <!-- SOLO UNO -->
+    <input
+        type="email"
+        id="correo"
+        readonly
+    >
+
+    <input
+        type="text"
+        id="codigo"
+        placeholder="Código de 6 dígitos"
+    >
+
+    <button onclick="verificarCodigo()">
+        Verificar
+    </button>
+
+    <p id="mensaje"></p>
+
+</div>
+
+<script src="js/verificar_codigo.js"></script>
+
+</body>
+
+</html>

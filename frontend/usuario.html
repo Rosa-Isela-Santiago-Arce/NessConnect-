@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4f46e5">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Perfil de Usuario
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <header class="topbar">
+
+        <h2>
+            👤 Usuario
+        </h2>
+
+    </header>
+
+    <section class="perfil-card">
+
+        <img
+            id="fotoUsuario"
+            src="img/default.png"
+            style="
+                width:120px;
+                height:120px;
+                border-radius:50%;
+                object-fit:cover;
+            "
+        >
+
+        <h2 id="nombreUsuario">
+
+            Cargando...
+
+        </h2>
+
+        <p id="carreraUsuario">
+
+            Carrera
+
+        </p>
+
+        <p id="semestreUsuario">
+
+            Semestre
+
+        </p>
+
+        <div id="materiasUsuario">
+
+        </div>
+
+        <br>
+<button
+    id="btnMensaje"
+    onclick="enviarSolicitudChat()"
+>
+
+    📨 Mandar mensaje
+
+</button>
+
+        <br><br>
+
+        <button id="btnAgregarAmigo">
+            ➕ Agregar amigo
+        </button>
+
+    </section>
+
+    <section class="feed">
+
+        <h3>
+
+            📝 Publicaciones
+
+        </h3>
+
+        <div id="publicacionesUsuario">
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/usuario.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4f46e5">
+
+    <div class="header-publicacion">
+    <button onclick="cerrarPublicacion()" class="btn-x">✖</button>
+</div>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicación - 💙NessConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header class="topbar">
+        <h2>📌 Publicación</h2>
+    </header>
+
+    <!-- DETALLE DE PUBLICACIÓN -->
+    <section class="feed">
+
+        <div id="detallePublicacion">
+            Cargando...
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- COMENTARIOS -->
+    <section class="feed">
+
+        <h3>💬 Comentarios</h3>
+
+        <input
+            id="nuevoComentario"
+            placeholder="Escribe un comentario..."
+        >
+
+        <button onclick="enviarComentario()">
+            Comentar
+        </button>
+
+        <div id="listaComentarios"></div>
+
+    </section>
+
+</div>
+
+<!-- SCRIPTS -->
+<script src="js/app.js"></script>
+
+<script>
+window.onload = () => {
+    console.log("FORZANDO CARGA DETALLE");
+    cargarDetallePublicacion();
+};
+</script>
+
+</body>
+</html>

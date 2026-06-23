@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4f46e5">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - 💙NessConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="auth-container">
+
+        <div class="logo-area">
+
+            <h1>NessConnect</h1>
+
+            <p>
+                Únete a la comunidad
+            </p>
+
+        </div>
+
+        <div class="auth-card">
+
+            <h2>Crear Cuenta</h2>
+
+            <input
+                type="text"
+                id="usuario"
+                placeholder="Nombre de usuario"
+            >
+
+            <input
+                type="email"
+                id="correo"
+                placeholder="Correo electrónico"
+            >
+
+            <input
+                type="text"
+                id="telefono"
+                placeholder="Teléfono"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Contraseña"
+            >
+
+<button type="button" onclick="enviarCodigo()">
+    Enviar código
+</button>
+
+<input id="codigo" placeholder="Código SMS">
+
+<button type="button" onclick="verificarCodigo()">
+    Verificar código
+</button>
+
+<button type="button" onclick="registrarUsuario()">
+    Crear cuenta
+</button>
+
+            <div class="separador"></div>
+
+            <p>
+                ¿Ya tienes cuenta?
+            </p>
+
+            <a href="login.html">
+                Iniciar sesión
+            </a>
+
+        </div>
+
+    </div>
+<script src="js/app.js"></script>
+</body>
+</html>

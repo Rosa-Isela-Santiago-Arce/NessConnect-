@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#4f46e5">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat - NessConnect</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+
+    <header class="topbar">
+
+
+        <div class="chat-header">
+
+
+            <button 
+            class="btn-volver" 
+            onclick="history.back()">
+                ⬅
+            </button>
+
+
+
+            <div class="info-chat">
+
+                <h3>
+                    Chateando con:
+                    <span id="nombreUsuario">
+                        Cargando...
+                    </span>
+                </h3>
+
+
+                <small>
+                    En línea
+                </small>
+
+
+            </div>
+
+
+        </div>
+
+
+    </header>
+
+
+
+
+
+    <section class="feed">
+
+
+        <div 
+        id="mensajes" 
+        class="contenedor-mensajes">
+
+
+            Cargando mensajes...
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <section class="crear-post chat-input">
+
+
+        <textarea
+            id="mensajeTexto"
+            placeholder="Escribe un mensaje..."
+        ></textarea>
+
+
+
+        <button
+            id="btnEnviarMensaje"
+            onclick="enviarMensaje()"
+        >
+
+            Enviar
+
+        </button>
+
+
+    </section>
+
+
+
+
+
+    <!-- MASCOTA NESSIE -->
+
+    <div id="nessie">
+
+        <img 
+        id="nessieImagen"
+        src="img/nessie/nessie_moviendotrasero.gif"
+        alt="Nessie">
+
+    </div>
+
+
+
+
+
+    <!-- MENU INFERIOR -->
+
+    <nav class="menu-inferior">
+
+
+        <a href="inicio.html">
+            🏠
+        </a>
+
+
+        <a href="mensajes.html">
+            💬
+        </a>
+
+
+        <a href="#">
+            👾
+        </a>
+
+
+        <a href="perfil.html">
+            👤
+        </a>
+
+
+
+    </nav>
+
+
+
+
+</div>
+
+
+
+
+
+<script src="js/nessie.js"></script>
+
+<script src="js/chat.js"></script>
+
+
+
+</body>
+</html>
